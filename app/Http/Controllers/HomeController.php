@@ -24,7 +24,8 @@ class HomeController extends Controller
      */
     public function index($user)
     {
-        $foundUser = User::find($user);
+        // findOrFail will throw a 404 rather then breaking the app
+        $foundUser = User::findOrFail($user);
         return view('home' , [
             'user' => $foundUser,
         ]);
