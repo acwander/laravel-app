@@ -2,22 +2,10 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
-                </div>
-            </div>
-        </div>
+    <h1 class='border-bottom'>My Scorecards</h1>
+    <div class='row-12 pt-4'>
+        <p>Most recent scorecard</p>
+        <p>Oldest scorecard</p>
     </div>
 </div>
 @endsection
