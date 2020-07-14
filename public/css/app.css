@@ -10923,3 +10923,8 @@ a.text-dark:focus {
   }
 }
 
+.scorecard {
+  display: table;
+  width: 100%;
+}
+
