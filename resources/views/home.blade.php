@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <h1 class='border-bottom'>My Scorecards</h1>
+    <h1 class='border-bottom'>{{ Auth::user()->name }}'s Scorecards</h1>
     <div class='row-12 pt-4'>
         <p>Most recent scorecard</p>
         <p>Oldest scorecard</p>
