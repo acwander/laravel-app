@@ -20,6 +20,7 @@ class ScorecardsController extends Controller
 
     public function store()
     {
+        // validate the data entered into the form
         $data = request()->validate([
             'course' => 'required',
             'date' => 'required',
@@ -140,6 +141,10 @@ class ScorecardsController extends Controller
         // grab authenticated user, go to scorecards and use create many
         auth()->user()->scorecards()->create($data);
 
-        dd(request()->all());
+        // displays data on page
+        // dd(request()->all());
+
+        // on submit, takes user to their home page
+        return redirect('/home/' . auth()->user()->id);
     }
 }
