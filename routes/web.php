@@ -19,4 +19,9 @@ Route::get('/', function () {
 
 Auth::routes();
 
+// show user
 Route::get('/home/{user}', 'HomeController@index')->name('home.show');
+
+// create scorecard
+Route::get('/scorecard/create', 'ScorecardsController@create');
+Route::post('/scorecard', 'ScorecardsController@store');

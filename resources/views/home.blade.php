@@ -2,8 +2,14 @@
 
 @section('content')
 <div class="container">
-    <h1 class='border-bottom'>{{ $user->username }}'s Scorecards</h1>
-    <p>{{ $user->profile->about }}</p>
+    <div class='d-flex justify-content-between align-items-baseline border-bottom'>
+        <h1 class=''>{{ $user->username }}'s Scorecards</h1>
+        <a href='#' class='btn-sm btn-primary'>Add Scorecard</a>
+    </div>
+    <div>
+        <p>{{ $user->profile->about }}</p>
+    </div>
+    
     <!-- scorecards -->
     <div class='mt-5'>
         <div class='d-flex'>
