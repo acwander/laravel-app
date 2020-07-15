@@ -200,6 +200,11 @@
                 </tr>
             </tbody>
         </table>
+        <!-- TODO: make buttons function -->
+        <div class='mt-3 mb-3 pb-2 border-bottom'>
+            <button class='btn btn-primary'>Edit Scorecard</button>
+            <button class='btn btn-danger'>Delete Scorecard</button>
+        </div>
         @endforeach
     </div>
 </div>
