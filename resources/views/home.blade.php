@@ -10,7 +10,7 @@
             <h5 class='w-100'>Course Name:</h5>
             <h5 class='pr-5 mr-5'>Date:</h5>
         </div>
-        <table class="table-bordered text-center scorecard">
+        <table class="table-bordered table-striped text-center scorecard">
             <tbody>
                 <tr>
                     <th scope="row">Distance</th>
@@ -87,7 +87,7 @@
                     <td>Total</td>
                     <td>+/-</td>
                 </tr>
-                <tr class="table-striped">
+                <tr>
                     <th scope="row">Player 1</th>
                     <td></td>
                     <td></td>
@@ -137,7 +137,7 @@
                     <td></td>
                     <td></td>
                 </tr>
-                <tr class="table-striped">
+                <tr>
                     <th scope="row">Player 3</th>
                     <td></td>
                     <td></td>
