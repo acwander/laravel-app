@@ -4,6 +4,7 @@
 <div class="container">
     <div class='d-flex justify-content-between align-items-baseline border-bottom'>
         <h1 class=''>{{ $user->username }}'s Scorecards</h1>
+        <p class='pr-5'><strong>{{ $user->scorecards->count() }}</strong> Scorecards</p>
         <a href='/scorecard/create' class='btn-sm btn-primary'>Add Scorecard</a>
     </div>
     <div>
@@ -202,8 +203,9 @@
         </table>
         <!-- TODO: make buttons function -->
         <div class='mt-3 mb-3 pb-2 border-bottom'>
-            <button class='btn btn-primary'>Edit Scorecard</button>
-            <button class='btn btn-danger'>Delete Scorecard</button>
+            <a href="/scorecard/{{ $scorecard->id }}">
+                <button class='btn btn-dark'>View More</button>
+            </a>
         </div>
         @endforeach
     </div>

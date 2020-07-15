@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Scorecard;
 
 class ScorecardsController extends Controller
 {
@@ -146,5 +147,16 @@ class ScorecardsController extends Controller
 
         // on submit, takes user to their home page
         return redirect('/home/' . auth()->user()->id);
+    }
+
+    public function show(Scorecard $scorecard)
+    {
+        // dd($scorecard);
+        return view('scorecards.show', compact('scorecard'));
+    }
+
+    public function edit(Scorecard $scorecard)
+    {
+        return view('scorecards.edit', compact('scorecard'));
     }
 }

@@ -25,3 +25,9 @@ Route::get('/home/{user}', 'HomeController@index')->name('home.show');
 // create scorecard
 Route::get('/scorecard/create', 'ScorecardsController@create');
 Route::post('/scorecard', 'ScorecardsController@store');
+
+// show scorecard
+Route::get('/scorecard/{scorecard}', 'ScorecardsController@show');
+
+// edit scorecard
+Route::get('/scorecard/{scorecard}/edit', 'ScorecardsController@edit');
