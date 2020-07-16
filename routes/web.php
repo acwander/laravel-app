@@ -32,3 +32,6 @@ Route::get('/scorecard/{scorecard}', 'ScorecardsController@show');
 // edit scorecard
 Route::get('/scorecard/{scorecard}/edit', 'ScorecardsController@edit');
 Route::patch('/scorecard/{scorecard}', 'ScorecardsController@update');
+
+// delete scorecard
+Route::delete('/scorecard/{scorecard}', 'ScorecardsController@destroy');

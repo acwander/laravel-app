@@ -189,11 +189,15 @@
           </tr>
       </tbody>
   </table>
-  <div class='mt-3 mb-3 pb-2'>
+  <div class='d-flex mt-3 mb-3 pb-2'>
     <a href="/scorecard/{{ $scorecard->id }}/edit">
-      <button class='btn btn-primary'>Edit Scorecard</button>
+      <button class='btn btn-primary mr-3'>Edit Scorecard</button>
     </a>
-    <button class='btn btn-danger'>Delete Scorecard</button>
+    <form action='/scorecard/{{ $scorecard->id }}' method='POST'>
+        @csrf
+        @method('DELETE')
+        <input type='submit' class='btn btn-danger' value='Delete Scorecard'></input>
+    </form>
   </div>
 </div>
 @endsection

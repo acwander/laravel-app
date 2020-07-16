@@ -283,4 +283,10 @@ class ScorecardsController extends Controller
 
         return redirect("/scorecard/{$scorecard->id}");
     }
+
+    public function destroy(Scorecard $scorecard)
+    {
+        $scorecard->delete();
+        return redirect('/home/' . auth()->user()->id);
+    }
 }
