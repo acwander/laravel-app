@@ -84,7 +84,7 @@
               <td>+/-</td>
           </tr>
           <tr>
-              <th scope="row">Player 1</th>
+              <th scope="row">{{ $scorecard->player1 }}</th>
               <td>{{ $scorecard->player1hole1 }}</td>
               <td>{{ $scorecard->player1hole2 }}</td>
               <td>{{ $scorecard->player1hole3 }}</td>
@@ -110,7 +110,7 @@
               <td><strong></strong></td>
           </tr>
           <tr>
-              <th scope="row">Player 2</th>
+              <th scope="row">{{ $scorecard->player2 }}</th>
               <td>{{ $scorecard->player2hole1 }}</td>
               <td>{{ $scorecard->player2hole2 }}</td>
               <td>{{ $scorecard->player2hole3 }}</td>
@@ -136,7 +136,7 @@
               <td><strong></strong></td>
           </tr>
           <tr>
-              <th scope="row">Player 3</th>
+              <th scope="row">{{ $scorecard->player3 }}</th>
               <td>{{ $scorecard->player3hole1 }}</td>
               <td>{{ $scorecard->player3hole2 }}</td>
               <td>{{ $scorecard->player3hole3 }}</td>
@@ -162,7 +162,7 @@
               <td><strong></strong></td>
           </class=>
           <tr>
-              <th scope="row">Player 4</th>
+              <th scope="row">{{ $scorecard->player4 }}</th>
               <td>{{ $scorecard->player4hole1 }}</td>
               <td>{{ $scorecard->player4hole2 }}</td>
               <td>{{ $scorecard->player4hole3 }}</td>
