@@ -83,6 +83,12 @@
                 <div class="title m-b-md">
                     Player Scorecard
                 </div>
+                <div>
+                    Personal Golf Scorecard
+                </div>
+                <div>
+                    Track all your rounds and never lose a scorecard again!
+                </div>
 
                 <!-- <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>

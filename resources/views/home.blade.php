@@ -12,7 +12,7 @@
     </div>
     
     <!-- scorecards -->
-    <div class='pt-5'>
+    <div class='pt-5' style="margin-left: -3.5em;">
         @foreach($user->scorecards as $scorecard)
         <div class='d-flex'>
             <h5 class='w-100'>Course Name: <strong>{{ $scorecard->course }}</strong></h5>
@@ -119,7 +119,7 @@
                     <td><strong>{{ $scorecard->player1hole10 + $scorecard->player1hole11 + $scorecard->player1hole12 + $scorecard->player1hole13 + $scorecard->player1hole14 + $scorecard->player1hole15 + $scorecard->player1hole16 + $scorecard->player1hole17 + $scorecard->player1hole18 }}</strong></td>
                     <td><strong>{{ $scorecard->player1hole1 + $scorecard->player1hole2 + $scorecard->player1hole3 + $scorecard->player1hole4 + $scorecard->player1hole5 + $scorecard->player1hole6 + $scorecard->player1hole7 + $scorecard->player1hole8 + $scorecard->player1hole9 + $scorecard->player1hole10 + $scorecard->player1hole11 + $scorecard->player1hole12 + $scorecard->player1hole13 + $scorecard->player1hole14 + $scorecard->player1hole15 + $scorecard->player1hole16 + $scorecard->player1hole17 + $scorecard->player1hole18 }}</strong></td>
                     <!-- TODO: calculate +/- -->
-                    <td><strong></strong></td>
+                    <td><strong>{{ ($scorecard->player1hole1 - $scorecard->par1) + ($scorecard->player1hole2 - $scorecard->par2) + ($scorecard->player1hole3 - $scorecard->par3) + ($scorecard->player1hole4 - $scorecard->par4) + ($scorecard->player1hole5 - $scorecard->par5) + ($scorecard->player1hole6 - $scorecard->par6) + ($scorecard->player1hole7 - $scorecard->par7) + ($scorecard->player1hole9 - $scorecard->par9) + ($scorecard->player1hole10 - $scorecard->par10) + ($scorecard->player1hole11 - $scorecard->par11) + ($scorecard->player1hole12 - $scorecard->par12) + ($scorecard->player1hole13 - $scorecard->par13) + ($scorecard->player1hole14 - $scorecard->par14) + ($scorecard->player1hole15 - $scorecard->par15) + ($scorecard->player1hole16 - $scorecard->par16) + ($scorecard->player1hole17 - $scorecard->par17) + ($scorecard->player1hole18 - $scorecard->par18)}}</strong></td>
                 </tr>
                 <tr>
                     <th scope="row">{{ $scorecard->player2 }}</th>
@@ -145,7 +145,7 @@
                     <td>{{ $scorecard->player2hole10 + $scorecard->player2hole11 + $scorecard->player2hole12 + $scorecard->player2hole13 + $scorecard->player2hole14 + $scorecard->player2hole15 + $scorecard->player2hole16 + $scorecard->player2hole17 + $scorecard->player2hole18 }}</td>
                     <td>{{ $scorecard->player2hole1 + $scorecard->player2hole2 + $scorecard->player2hole3 + $scorecard->player2hole4 + $scorecard->player2hole5 + $scorecard->player2hole6 + $scorecard->player2hole7 + $scorecard->player2hole8 + $scorecard->player2hole9 + $scorecard->player2hole10 + $scorecard->player2hole11 + $scorecard->player2hole12 + $scorecard->player2hole13 + $scorecard->player2hole14 + $scorecard->player2hole15 + $scorecard->player2hole16 + $scorecard->player2hole17 + $scorecard->player2hole18 }}</td>
                     <!-- TODO: calculate +/- -->
-                    <td><strong></strong></td>
+                    <td><strong>{{ ($scorecard->player2hole1 - $scorecard->par1) + ($scorecard->player2hole2 - $scorecard->par2) + ($scorecard->player2hole3 - $scorecard->par3) + ($scorecard->player2hole4 - $scorecard->par4) + ($scorecard->player2hole5 - $scorecard->par5) + ($scorecard->player2hole6 - $scorecard->par6) + ($scorecard->player2hole7 - $scorecard->par7) + ($scorecard->player2hole9 - $scorecard->par9) + ($scorecard->player2hole10 - $scorecard->par10) + ($scorecard->player2hole11 - $scorecard->par11) + ($scorecard->player2hole12 - $scorecard->par12) + ($scorecard->player2hole13 - $scorecard->par13) + ($scorecard->player2hole14 - $scorecard->par14) + ($scorecard->player2hole15 - $scorecard->par15) + ($scorecard->player2hole16 - $scorecard->par16) + ($scorecard->player2hole17 - $scorecard->par17) + ($scorecard->player2hole18 - $scorecard->par18)}}</strong></td>
                 </tr>
                 <tr>
                     <th scope="row">{{ $scorecard->player3 }}</th>

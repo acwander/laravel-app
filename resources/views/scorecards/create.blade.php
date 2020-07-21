@@ -6,8 +6,8 @@
     @csrf
     <div class='row'>
       <div class='col-8 offset-2'>
-        <div class='row'>
-          <h1>Add New Scorecard</h1>
+        <div>
+          <h1 class='text-center pb-3'>New Scorecard</h1>
         </div>
         <div class="form-group row">
           <label for="course" class="col-md-4 col-form-label text-md-right">Course Name</label>

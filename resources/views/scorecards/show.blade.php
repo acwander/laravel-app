@@ -6,7 +6,7 @@
       <h5 class='w-100'>Course Name: <strong>{{ $scorecard->course }}</strong></h5>
       <h5 class=''>Date: <strong>{{ $scorecard->date }}</strong></h5>
   </div>
-  <table class="table-bordered table-striped text-center scorecard">
+  <table class="table-bordered table-striped text-center scorecard" style="margin-left: -3.5em;">
       <tbody>
           <tr>
               <th scope="row">Distance</th>
